@@ -38,9 +38,10 @@ export default function HomePage() {
               <div>
                 <h3 className="mb-1 font-medium text-lg">Original Product</h3>
                 <Image
-                  alt="Original photo of a sneaker"
+                  alt="Original photo of a camera"
                   src="/examples/Camera/before.png"
                   className="w-full object-cover h-96 rounded-2xl bg-white"
+                  priority={true}
                   width={400}
                   height={400}
                 />
@@ -48,7 +49,8 @@ export default function HomePage() {
               <div className="sm:mt-0 mt-8">
                 <h3 className="mb-1 font-medium text-lg">Generated Product</h3>
                 <Image
-                  alt="Generated photo of a sneaker with productgenie"
+                  alt="Generated photo of a camera with productgenie"
+                  priority={true}
                   width={400}
                   height={400}
                   src="/examples/Camera/after.jpg"
