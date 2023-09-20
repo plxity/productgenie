@@ -39,7 +39,7 @@ export default function HomePage() {
                 <h3 className="mb-1 font-medium text-lg">Original Product</h3>
                 <Image
                   alt="Original photo of a sneaker"
-                  src="/Examples/Camera/before.png"
+                  src="/examples/Camera/before.png"
                   className="w-full object-cover h-96 rounded-2xl bg-white"
                   width={400}
                   height={400}
@@ -51,7 +51,7 @@ export default function HomePage() {
                   alt="Generated photo of a sneaker with productgenie"
                   width={400}
                   height={400}
-                  src="/Examples/Camera/after.jpg"
+                  src="/examples/Camera/after.jpg"
                   className="w-full object-cover h-96 rounded-2xl sm:mt-0 mt-2"
                 />
               </div>

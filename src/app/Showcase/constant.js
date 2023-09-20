@@ -1,26 +1,26 @@
 export const EXAMPLES = [
   {
     name: 'Sneaker',
-    afterImg: '/Examples/Sneakers/after.jpg',
-    beforeImg: '/Examples/Sneakers/before.png',
+    afterImg: '/examples/Sneakers/after.jpg',
+    beforeImg: '/examples/Sneakers/before.png',
     command: '',
   },
   {
     name: 'Camera',
-    afterImg: '/Examples/Camera/after.jpg',
-    beforeImg: '/Examples/Camera/before.png',
+    afterImg: '/examples/Camera/after.jpg',
+    beforeImg: '/examples/Camera/before.png',
     command: '',
   },
   {
     name: 'Lipstick',
-    afterImg: '/Examples/Lipstick/after.jpg',
-    beforeImg: '/Examples/Lipstick/before.png',
+    afterImg: '/examples/Lipstick/after.jpg',
+    beforeImg: '/examples/Lipstick/before.png',
     command: '',
   },
   {
     name: 'plant',
-    afterImg: '/Examples/Plant/after.jpg',
-    beforeImg: '/Examples/Plant/before.png',
+    afterImg: '/examples/Plant/after.jpg',
+    beforeImg: '/examples/Plant/before.png',
     command: '',
   },
 ];
