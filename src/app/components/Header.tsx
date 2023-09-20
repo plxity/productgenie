@@ -35,7 +35,7 @@ export default function Header() {
   }
   const signOutWithGoogle = async () => {
     const { error } = await supabase.auth.signOut()
-    router.refresh()
+    window.location.reload();
   }
 
   return (
@@ -54,7 +54,7 @@ export default function Header() {
       </Link>
       <div>
         <Link href="/Showcase" className="hidden lg:inline mr-6">
-          More Examples
+           Examples
         </Link>
         <button
           className="bg-blue-600 rounded-xl text-white font-medium px-5 py-2  hover:bg-blue-500 transition self-center"
