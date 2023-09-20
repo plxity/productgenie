@@ -13,7 +13,7 @@ function Examples() {
               <div>
                 <h3 className="mb-1 font-medium text-lg text-center">Original Product</h3>
                 <Image
-                  alt="Original photo of a sneaker"
+                  alt={`Original photo of a ${name}`}
                   src={beforeImg}
                   className="w-full object-cover h-96 rounded-2xl bg-white"
                   width={400}
@@ -23,7 +23,7 @@ function Examples() {
               <div className="sm:mt-0 mt-8">
                 <h3 className="mb-1 font-medium text-lg text-center">Generated Product</h3>
                 <Image
-                  alt="Generated photo of a sneaker with productgenie"
+                  alt={`Generated photo of a ${name} with productgenie`}
                   width={400}
                   height={400}
                   src={afterImg}
