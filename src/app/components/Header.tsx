@@ -53,7 +53,7 @@ export default function Header() {
         </h1>
       </Link>
       <div>
-        <Link href="Examples" className="hidden lg:inline mr-6">
+        <Link href="/Showcase" className="hidden lg:inline mr-6">
           More Examples
         </Link>
         <button
