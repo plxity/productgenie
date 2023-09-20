@@ -23,7 +23,7 @@ export async function POST(request: Request) {
 
     if (!result.success) {
       return NextResponse.json(
-        "Too many uploads in 1 day. Please try again in a 24 hours.",
+        "Too many uploads in 1 day. Please try again in 24 hours.",
         {
           status: 429,
           headers: {
