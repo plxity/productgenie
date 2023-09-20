@@ -77,7 +77,7 @@ export default function DreamPage() {
       setIsChecking(false);
     }
     isUserLoggedIn()
-  }, [supabase])
+  }, [])
   const onGenerate = () => {
     generatePhoto(originalPhoto, productDescription);
     setError(null);
@@ -113,6 +113,7 @@ export default function DreamPage() {
     return restoredImage.map((img: string) => {
       return (
         <Image
+          key={img}
           alt="restored photo"
           src={img}
           className="rounded-2xl relative sm:mt-0 mt-2 cursor-zoom-in h-auto"
@@ -193,7 +194,8 @@ export default function DreamPage() {
                     <div className="mt-4 w-full max-w-sm">
                       <div className="flex mt-6 w-96 items-center space-x-3">
                         <p className="text-left font-medium">
-                          Upload a picture of your product.
+                          Upload a picture of your product. <br />
+                          (Use transparent images for better results)
                         </p>
                       </div>
                     </div>

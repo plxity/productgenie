@@ -7,7 +7,7 @@ function Examples() {
     return EXAMPLES.map(ex => {
       const { afterImg, beforeImg, name } = ex;
       return (
-        <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
+        <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6" key={name}>
           <div className="flex flex-col space-y-10 mt-4 mb-16">
             <div className="flex sm:space-x-8 sm:flex-row flex-col">
               <div>

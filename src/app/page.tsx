@@ -8,8 +8,8 @@ import { cardDetails } from './constants';
 
 export default function HomePage() {
   const renderCards = () => {
-    return cardDetails.map((cardInfo) => {
-      return <Card {...cardInfo} />
+    return cardDetails.map((cardInfo, index) => {
+      return <Card {...cardInfo} key={index} />
     })
   }
   return (
