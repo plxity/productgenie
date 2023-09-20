@@ -3,6 +3,7 @@ import redis from "../../utils/redis";
 import { NextResponse } from "next/server";
 import { headers } from "next/headers";
 
+export const runtime = 'edge';
 const ratelimit = redis
   ? new Ratelimit({
     redis: redis,
@@ -10,6 +11,7 @@ const ratelimit = redis
     analytics: true,
   })
   : undefined;
+
 
 export async function POST(request: Request) {
   // Rate Limiter Code
