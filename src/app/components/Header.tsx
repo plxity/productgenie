@@ -35,7 +35,7 @@ export default function Header() {
   }
   const signOutWithGoogle = async () => {
     const { error } = await supabase.auth.signOut()
-    router.push("/")
+    router.refresh()
   }
 
   return (
