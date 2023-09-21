@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { EXAMPLES } from './constant'
+import Header from '../components/Header';
 
 function Examples() {
 
@@ -38,15 +39,14 @@ function Examples() {
     })
   }
   return <main className='mt-8'>
-    <h2 className='text-center text-5xl'>Examples</h2>
-
+    <h2 className='text-center text-5xl'>Showcase</h2>
     <div className='mt-8 flex justify-center'>
-    <Link
-      className="bg-blue-600 rounded-xl text-white font-medium px-4 py-3 hover:bg-blue-500 transition"
-      href="/Generate"
-    >
-      Generate Product Images
-    </Link>
+      <Link
+        className="bg-blue-600 rounded-xl text-white font-medium px-4 py-3 hover:bg-blue-500 transition"
+        href="/Generate"
+      >
+        Generate Product Images
+      </Link>
     </div>
 
     <div className="flex mt-6 flex-col">
