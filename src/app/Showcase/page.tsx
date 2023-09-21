@@ -38,8 +38,9 @@ function Examples() {
       )
     })
   }
-  return <main className='mt-8'>
-    <h2 className='text-center text-5xl'>Showcase</h2>
+  return <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
+    <Header />
+    {/* <h2 className='text-center text-5xl'>Showcase</h2> */}
     <div className='mt-8 flex justify-center'>
       <Link
         className="bg-blue-600 rounded-xl text-white font-medium px-4 py-3 hover:bg-blue-500 transition"
@@ -52,7 +53,7 @@ function Examples() {
     <div className="flex mt-6 flex-col">
       {renderExamples()}
     </div>
-  </main>
+  </div >
 }
 
 export default Examples;
