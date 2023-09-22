@@ -63,8 +63,6 @@ export async function POST(request: Request) {
     );
   }
   let jsonStartResponse = await startResponse.json();
-
-
   let endpointUrl = jsonStartResponse.urls.get;
 
   let restoredImage: string | null = null;
