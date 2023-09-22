@@ -62,10 +62,11 @@ export async function POST(request: Request) {
       { status: 500 }
     );
   }
+
   let jsonStartResponse = await startResponse.json();
   let endpointUrl = jsonStartResponse.urls.get;
-
   let restoredImage: string | null = null;
+  
   while (!restoredImage) {
     let finalResponse = await fetch(endpointUrl, {
       method: "GET",
