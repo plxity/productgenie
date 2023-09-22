@@ -48,7 +48,7 @@ export async function POST(request: Request) {
       version: process.env.REPLICATE_VERSION,
       input: {
         image_path: imageUrl,
-        image_num: 4,
+        image_num: 3,
         prompt: productDescription,
         api_key: process.env.OPEN_AI_API_KEY,
         negative_prompt: 'illustration, 3d, sepia, painting, cartoons, sketch, (worst quality:2)',
